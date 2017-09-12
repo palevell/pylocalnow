@@ -1,0 +1,13 @@
+setup.py
+bin/localnow
+localnow.egg-info/PKG-INFO
+localnow.egg-info/PKG-INFO~
+localnow.egg-info/SOURCES.txt
+localnow.egg-info/SOURCES.txt~
+localnow.egg-info/dependency_links.txt
+localnow.egg-info/dependency_links.txt~
+localnow.egg-info/not-zip-safe
+localnow.egg-info/requires.txt
+localnow.egg-info/requires.txt~
+localnow.egg-info/top_level.txt
+localnow.egg-info/top_level.txt~

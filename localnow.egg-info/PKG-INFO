@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: localnow
+Version: 1.1.6
+Summary: Returns a PyTZ object with the local time & timezone
+Home-page: https://github.com/iPadGuy/pylocalnow
+Author: iPad Guy
+Author-email: ipad.guy.100@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

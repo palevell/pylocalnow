@@ -1,0 +1,29 @@
+#!/usr/local/bin/python3
+# localnow v2.0.19 - Tuesday, August 1, 2017
+
+from localnow import *
+import argparse
+
+"""
+ArgumentParser(prog=None, usage=None, description=None, epilog=None, parents=[], formatter_class=argparse.HelpFormatter, prefix_chars='-', fromfile_prefix_chars=None, argument_default=None, conflict_handler='error', add_help=True)
+"""
+
+parser = argparse.ArgumentParser(description="Returns a PyTZ object with the local time & timezone")
+parser.add_argument("-n", "--nano", action="store_true", help="include nanoseconds")
+parser.add_argument("-i", "--iso", action="store_true", help="use ISO 8601 format")
+# ToDo: 2017-Aug-01 PAL - TZ on/off
+args = parser.parse_args()
+
+# Include nanoseconds?
+if not args.nano:
+	now = localnow().replace(microsecond=0)
+else:
+	now = localnow()
+
+# Include "T" for ISO 8601 format?
+if not args.iso:
+	msg = now.isoformat(' ')
+else:
+	msg = now.isoformat()
+
+print(msg)
