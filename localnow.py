@@ -1,4 +1,4 @@
-# localnow().py v1.0.1 - Thursday, July 6, 2017
+# localnow.py v1.0.2 - Thursday, July 6, 2017
 """
 	Returns a PyTZ object with the local time & timezone
 
@@ -29,8 +29,10 @@ def localnow():
 	#print(rundate.replace(microsecond=0).isoformat())
 	return(rundate)
 
+"""
 print(localnow().replace(microsecond=0))
 print("localnow():", localnow())
 print("localnow().isoformat:", localnow().isoformat())
 print("localnow().replace(microsecond=0):", localnow().replace(microsecond=0))
 print("localnow().replace(microsecond=0).isoformat():", localnow().replace(microsecond=0).isoformat())
+"""
